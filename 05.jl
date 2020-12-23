@@ -19,7 +19,7 @@ end
 
 input = readlines("in/05.in")
 
-ids = (get_row_seat.(input))
+ids = get_row_seat.(input)
 
 sort_ids = sort(ids)
 sort_ids[findmax(diff(sort_ids))[2]] + 1
